@@ -10,17 +10,19 @@
       }
 
       td, th {
-         border: 3px solid #d63636;
+         border: 3px solid red;
          text-align: left;
          padding: 8px;
       }
 
       th {
          text-align: center;
+         background-color:red;
+         color:white;
       }
 
       tr:nth-child(even) {
-         background-color: #248bb4;
+         background-color:rgba(255,0,0,0.3);
       }
    </style>
 </head>
@@ -29,7 +31,7 @@
 
    <h2>Table Pada HTML</h2>
 
-   <p>Quisque et nibh augue. In pretium pretium consectetur. Suspendisse dolor mi, feugiat id imperdiet eu, dictum faucibus mauris. Fusce at dignissim est, efficitur bibendum lorem. Sed gravida posuere efficitur. Nullam dapibus mollis luctus. Morbi pharetra lacus finibus molestie tristique. </p>
+   <p>Contoh pembuatan elemen tabel pada HTML. Tampilan tabel ditentukan menggunakan CSS Style yang diletakkan pada elemen <code><span style='color:red;font-weight:bold;'>&lt;head&gt;</span></code>. </p>
 
    <table>
       <caption>Daftar Perusahaan</caption>
@@ -38,6 +40,7 @@
             <th>Nama Perusahaan</th>
             <th>CEO</th>
             <th>Negara</th>
+            <th colspan="2">No. Telp</th>
          </tr>
       </thead>
       <tbody>
@@ -45,35 +48,62 @@
             <td>Microsoft</td>
             <td>Williams H. Gates</td>
             <td>USA</td>
+            <td>+1 23 456 789</td>
+            <td>+1 38 123 345</td>
          </tr>
+
          <tr>
             <td>Indosat</td>
             <td>Bambang Wingit</td>
             <td>Indonesia</td>
+            <td>+2 23 456 789</td>
+            <td>+2 123 345</td>
          </tr>
          <tr>
             <td>Mercedes Benz</td>
             <td>Maria Mercedes</td>
             <td>Jerman</td>
+            <td>+3 23 456 789</td>
+            <td>+3 38 123 345</td>
          </tr>
          <tr>
             <td>Em Ai Six</td>
             <td>James Bend</td>
             <td>Inggris</td>
+            <td>+4 23 456 789</td>
+            <td>+4 38 123 345</td>
          </tr>
          <tr>
             <td>Mikoyan Group</td>
             <td>Kalashnikova Adrian</td>
             <td>Rusia</td>
+            <td>+5 23 456 789</td>
+            <td>+5 38 123 345</td>
          </tr>
          <tr>
             <td>Sawit Bercengkerama</td>
             <td>Upin Ipin</td>
             <td>Malaysia</td>
+            <td>+6 23 456 789</td>
+            <td>+6 38 123 345</td>
          </tr>
       </tbody>
    </table>
 
+   <h2>Tabel Dengan rowspan</h2>
+   <table style="width:100%;">
+      <tr>
+         <th>Nama:</th>
+         <td>Yusuf Yudhistira</td>
+      </tr>
+      <tr>
+         <th rowspan="2">No Telpon:</th>
+         <td>55577854</td>
+      </tr>
+      <tr>
+         <td>55577855</td>
+      </tr>
+   </table> 
 </body>
 
 </html>
