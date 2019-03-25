@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      table {
+         width:100%;
+      }
+
+      table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+      }
+      
+      th, td {
+         padding: 15px;
+      }
+      
+      td {
+         text-align: left;
+      }
+
+      table#t01 tr:nth-child(even) {
+         background-color: #ccc;
+      }
+      
+      table#t01 tr:nth-child(odd) {
+         background-color: #fff;
+      }
+      
+      table#t01 th {
+         background-color: black;
+         color: white;
+      }
+   </style>
+</head>
+
+<body>
+
+   <h2>Tabel Dengan rowspan</h2>
+   <table>
+      <tr>
+         <th>Nama:</th>
+         <td>Yusuf Yudhistira</td>
+      </tr>
+      <tr>
+         <th rowspan="2">No Telpon:</th>
+         <td>55577854</td>
+      </tr>
+      <tr>
+         <td>55577855</td>
+      </tr>
+   </table>
+
+   <h2>Tabel Dengan Style Dasar</h2>
+   <table>
+      <tr>
+        <th>Nama Depan</th>
+        <th>Nama Akhir</th> 
+        <th>Umur</th>
+      </tr>
+      <tr>
+        <td>Andi</td>
+        <td>Arief</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Ratna</td>
+        <td>Sumiyati</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Muhammad</td>
+        <td>Abdullah</td>
+        <td>80</td>
+      </tr>
+    </table>
+
+    <h2>Tabel Dengan Style 1</h2>
+    <table id="t01">
+       <tr>
+         <th>Nama Depan</th>
+         <th>Nama Akhir</th> 
+         <th>Umur</th>
+       </tr>
+       <tr>
+         <td>Andi</td>
+         <td>Arief</td>
+         <td>50</td>
+       </tr>
+       <tr>
+         <td>Ratna</td>
+         <td>Sumiyati</td>
+         <td>94</td>
+       </tr>
+       <tr>
+         <td>Muhammad</td>
+         <td>Abdullah</td>
+         <td>80</td>
+       </tr>
+     </table>
+</body>
+
+</html>
