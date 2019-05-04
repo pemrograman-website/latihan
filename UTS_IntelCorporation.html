@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      table {
+         border-collapse: collapse;
+         width: 100%;
+      }
+
+      td, th {
+         border:2px solid;
+         padding: 2px;
+         padding-right: 4px;
+         padding-left: 4px;
+      }
+
+      th {
+         text-align: center;
+         background-color:gainsboro;
+         color:black;
+      }
+
+      td {
+         text-align: right;
+         vertical-align: middle;
+      }
+
+      td.merek {
+         background-color: gainsboro;
+         text-align: center;
+         vertical-align: top;
+         font-weight: bold;
+      }
+
+      td.nover {
+         text-align: center;
+         font-style: italic;
+      }
+
+      img.center {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 70%;
+      }
+   </style>
+</head>
+
+<body>
+
+   <h1>Intel Corporation</h1>
+   <hr>
+
+   <p><b><i><u>Intel Corporation</u></i></b> (<i>NASDAQ: INTC;</i> didirikan 1968) adalah sebuah perusahaan multinasional yang berpusat di Amerika Serikat dan terkenal dengan rancangan dan produksi mikroprosesor dan mengkhususkan dalam sirkuit terpadu. Intel juga membuat kartu jaringan, chipset papan induk, komponen, dan alat lainnya. Intel memiliki projek riset yang maju dalam seluruh aspek produksi semikonduktor, termasuk MEMS.
+   </p>
+
+   <p>
+      <img src="images/intelhq.jpg" alt="Kantor Pusat Intel Corporation" title="Kantor Pusat Intel Corporation" class="center">
+   </p>
+   <p style="text-align: center"><b>Gambar 1</b> - Kantor Pusat Intel Corporation</p>
+   <p>
+      <b>Intel Corporation</b> memproduksi banyak seri prosesor yang diperuntukkan untuk peralatan <i>desktop</i> dan <i>mobile</i>. Seri terbaru yang dikeluarkan pada April 2018 telah menggunakan teknologi fabrikasi 14nm. Daftar prosesor dapat dilihat pada tabel 1.
+   </p>
+
+   <table>
+      <caption><b>Table 1</b> - Daftar Prosesor Yang Diproduksi oleh Intel Corp.</caption>
+      <thead>
+         <tr>
+            <th rowspan="2">Merek</th>
+            <th colspan="4">Desktop</th>
+            <th colspan="4">Mobile</th>
+         </tr>
+         <tr>
+            <th>Nama Kode</th>
+            <th>Inti</th>
+            <th>Fab</th>
+            <th>Rilis</th>
+            <th>Nama Kode</th>
+            <th>Inti</th>
+            <th>Fab</th>
+            <th>Rilis</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td class="merek">Core Solo</td>
+            <td colspan="4" class="nover">Tidak ada versi desktop</td>
+            <td>N/A</td>
+            <td>1</td>
+            <td>65 nm</td>
+            <td>Jan 2006</td>
+         </tr>
+         <tr>
+            <td class="merek">Core Duo</td>
+            <td colspan="4" class="nover">Tidak ada versi desktop</td>
+            <td>Yonah</td>
+            <td>2</td>
+            <td>65 nm</td>
+            <td>Jan 2006</td>
+         </tr>
+         <tr>
+            <td class="merek">Core 2 Duo</td>
+            <td>Conroe<br>Allendale<br>Wolfdale</td>
+            <td>2<br>2<br>2</td>
+            <td>65 nm<br>65 nm<br>65 nm</td>
+            <td>Agus 2006<br>Jan 2007<br>Jan 2008</td>
+            <td>Merom <br> Penryn</td>
+            <td>2<br>2</td>
+            <td>65 nm<br>45 nm</td>
+            <td>Jul 2007<br>Jan 2008</td>
+         </tr>
+         <tr>
+            <td class="merek">Core 2 Extreme</td>
+            <td>Conroe XE<br>Kentsfield XE<br>Yorkfield XE</td>
+            <td>2<br>4<br>4</td>
+            <td>65 nm<br>65 nm<br>45 nm</td>
+            <td>July 2006<br>
+               Nov 2006<br>
+               Nov 2007</td>
+            <td>Merom XE<br>
+               Penryn XE<br>
+               Penryn XE</td>
+            <td>2<br>2<br>4</td>
+            <td>65 nm<br>
+               45 nm<br>
+               45 nm</td>
+            <td>Jul 2007<br>
+               Jan 2008<br>
+               Agus 2008</td>
+         </tr>
+         <tr>
+            <td class="merek">Core m7</td>
+            <td colspan="4" class="nover">Tidak ada versi desktop</td>
+            <td>Skylake</td>
+            <td>2</td>
+            <td>14 nm</td>
+            <td>Agus 2015</td>
+         </tr>
+         <tr>
+            <td class="merek">Core i3</td>
+            <td>Clarkdale<br>Sky Lake<br>Coffee Lake</td>
+            <td>2<br>2<br>4</td>
+            <td>32 nm<br>14 nm<br>14 nm</td>
+            <td>Jan 2010<br>Sep 2015<br>Jan 2019</td>
+            <td>Sandy Bridge<br>Kaby Lake<br>Cannon Lake</td>
+            <td>2<br>2<br>2</td>
+            <td>32 nm<br>14 nm<br>10 nm</td>
+            <td>Feb 2011<br>Agus 2016<br>Mei 2018</td>
+         </tr>
+         <tr>
+            <td class="merek">Core i5</td>
+            <td>Lynnfield<br>Ivy Bridge<br>Broadwell</td>
+            <td>4<br>2-4<br>4</td>
+            <td>45 nm<br>22 nm<br>14 nm</td>
+            <td>Sep 2009<br>April 2012<br>Jun 2015</td>
+            <td>Arrandale<br>Haswell<br>Skylake</td>
+            <td>2<br>2<br>2-4</td>
+            <td>32 nm<br>22 nm<br>14 nm</td>
+            <td>Jan 2010<br>Jun 2013<br>Sep 2015</td>
+         </tr>
+         <tr>
+            <td class="merek">Core i7</td>
+            <td>Gulftown<br>Sandy Bridge<br>Haswell<br>Kaby Lake</td>
+            <td>6<br>4<br>4<br>4</td>
+            <td>32 nm<br>32 nm<br>22 nm<br>14 nm</td>
+            <td>Jul 2010<br>Jan 2011<br>Jun 2013<br>Jan 2017</td>
+            <td>Clarkfield<br>Broadwell<br>Kaby Lake<br>Coffee Lake</td>
+            <td>4<br>4<br>2<br>4-6</td>
+            <td>45 nm<br>14 nm<br>14 nm<br>14 nm</td>
+            <td>Sep 2019<br>Jun 2015<br>Agus 2016<br>Apr 2018</td>
+         </tr>
+      </tbody>
+   </table>
+ 
+</body>
+
+</html>
+
+
+

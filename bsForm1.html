@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Formulir</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initialscale=1">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+   <div class="container">
+
+      <!--
+         Formulir Inline
+         action="/action_page.php" -> merupakan skrip pemroses formulir
+      -->
+      <div class="jumbotron">
+         <h1>Formulir Inline</h1>
+      </div>
+      <form class="form-inline" action="/action_page.php">
+         <div class="form-group">
+           <label for="email">Surel:</label>
+           <input type="email" class="form-control" id="email" placeholder="Masukkan surel..." name="email">
+         </div>
+         <div class="form-group">
+           <label for="pwd">Password:</label>
+           <input type="password" class="form-control" id="pwd" placeholder="Masukkan password..." name="pwd">
+         </div>
+         <div class="checkbox">
+           <label><input type="checkbox" name="remember"> Ingat saya</label>
+         </div>
+         <button type="submit" class="btn btn-default">Login</button>
+      </form>
+      <hr>
+      <h2>Formulir yang menggabungkan antara button dengan textbox.</h2>
+      <p>Kelas <span style="font-family: monospace">.input-group</span> merupakan kontainer untuk mempercantik input dengan menambahkan icon, text, atau button di depan atau di belakang sebagai "bantuan".</p>
+      <p>Kelas <span style="font-family: monospace">.input-group-btn</span> menempelkan button pada input. Biasanya digunakan pada search bar:</p>
+      <form action="/action_page.php">
+         <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+         </div>
+      </form>
+      <br>
+
+      <!--
+         Formulir Vertikal
+         Formulir jenis ini merupakan formulir default
+         action="/action_page.php" -> merupakan skrip pemroses formulir
+      -->
+      <div class="jumbotron">
+         <h1>Formulir Vertikal</h1>
+      </div>
+      <div class="page-header">
+         <h1><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Kami ingin masukan dari Anda !!!</h1>
+      </div>
+      <form action="/action_page.php">
+         <div class="form-group">
+            <label for="yourName" class="control-label">Nama</label>
+            <input type="text" class="form-control" id="yourName" placeholder="Masukkan nama Anda...">
+         </div>
+         <div class="form-group">
+            <label for="yourEmail" class="control-label">Alamat surel</label>
+            <input type="email" class="form-control" id="yourEmail" placeholder="Masukkan alamat surel Anda...">
+         </div>
+         <div class="form-group">
+            <label for="yourComments" class="control-label">Beritahu kami</label>
+            <textarea class="form-control" id="yourComments" placeholder="Komentar Anda..." rows="3"></textarea>
+         </div>
+         <div class="checkbox">
+            <label><input type="checkbox">Daftarkan saya !!!</label>
+         </div>
+         <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+      <br>
+
+      <!--
+         Formulir Horizontal
+         action="/action_page.php" -> merupakan skrip pemroses formulir
+      -->
+      <div class="jumbotron">
+         <h1>Formulir Horizontal</h1>
+      </div>
+      <div class="page-header">
+         <h1><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Kami ingin masukan dari Anda !!!</h1>
+      </div>
+      <form class="form-horizontal" action="/action_page.php">
+         <div class="form-group">
+            <label for="yourName" class="col-sm-3 control-label">Nama</label>
+            <div class="col-sm-9">
+               <div class="input-group">
+                  <span class="input-group-addon glyphicon glyphicon-user"></span>
+                  <input type="text" class="form-control" id="yourName" placeholder="Masukkan nama Anda...">
+               </div>
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="yourEmail" class="col-sm-3 control-label">Alamat surel</label>
+            <div class="col-sm-9">
+               <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="email" class="form-control" id="yourEmail" placeholder="Masukkan alamat surel Anda...">
+               </div>
+            </div>
+         </div>
+         <div class="form-group">
+            <label for="yourComments" class="col-sm-3 control-label">Beritahu kami</label>
+            <div class="col-sm-9">
+               <div class="input-group">
+                  <span class="input-group-addon glyphicon glyphicon-comment"></span>
+                  <textarea class="form-control" id="yourComments" placeholder="Komentar Anda..." rows="3"></textarea>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-9 col-sm-offset-3">
+            <div class="checkbox">
+               <label><input type="checkbox">Daftarkan Saya !!!</label>
+            </div>
+         </div>
+         <div class="clearfix">&nbsp;</div>
+         <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Kirim</button>
+         </div>
+      </form>
+   </div>
+</body>
+
+</html>
+

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <title>Grid System</title>
+   <title>Bootstrap's Grid System (Sistem Jala Pada Bootstrap)</title>
    <meta charset="UTF-8">
 
    <!-- Meta ini memastikan agar website responsif -->
@@ -16,32 +16,177 @@
 </head>
 
 <body>
-   <div class="row">
-      <h1>Scenario 1</h1>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="background-color:burlywood;">
-         Column 1: col-xs-4 col-sm-4 col-md-4 col-lg-4
+   <div class="container">
+      
+      <div class="page-header">
+        <h1><b>Sistem Jala Pada Bootstrap</b></h1>
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"  style="background-color:pink;">
-         Column 2: col-xs-4 col-sm-4 col-md-4 col-lg-4
-      </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"  style="background-color:turquoise;">
-         Column 3: col-xs-4 col-sm-4 col-md-4 col-lg-4
-      </div>
-   </div>
+      
+      <p>Ubahlah ukuran peramban untuk melihat efeknya.</p>
+      <hr>
 
-   <h1>Scenario 2</h1>
-   <div class="row">
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" style="background-color:burlywood;">
-         Column 1: col-xs-6 col-sm-4 col-md-4 col-lg-4
+      <h2>Skenario 1</h2>
+      <p>Jala tiga kolom dengan ukuran yang sama.</p>
+      <p>Jala akan saling bertumpuk secara otomatis jika lebar peramban kurang dari 768px (xs)</p>
+      <div class="row">
+         <div class="col-sm-4" style="background-color:lavender;">Kolom 1: .col-sm-4</div>
+         <div class="col-sm-4" style="background-color:lavenderblush;">Kolom 2: .col-sm-4</div>
+         <div class="col-sm-4" style="background-color:lavender;">Kolom 3: .col-sm-4</div>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" style="background-color:pink;">
-         Column 2: col-xs-6 col-sm-4 col-md-4 col-lg-4
+      <hr>
+
+      <h2>Skenario 2</h2>
+      <p>Jala tiga kolom dengan ukuran yang berbeda.</p>
+      <p>Jala akan saling bertumpuk secara otomatis jika lebar peramban kurang dari 768px (xs)</p>
+      <div class="row">
+         <div class="col-sm-3" style="background-color:lavender;">Kolom 1: .col-sm-3</div>
+         <div class="col-sm-6" style="background-color:lavenderblush;">Kolom 2: .col-sm-6</div>
+         <div class="col-sm-3" style="background-color:lavender;">Kolom 3: .col-sm-3</div>
       </div>
-      <div class="hidden-xs col-sm-4 col-md-4 col-lg-4" style="background-color:turquoise;">
-         Column 3: hidden-xs col-sm-4 col-md-4 col-lg-4
+      <hr>
+
+      <h2>Skenario 3</h2>
+      <p>Jala 2 kolom dengan ukuran yang berbeda.</p>
+      <p>Jala akan saling bertumpuk secara otomatis jika lebar peramban kurang dari 768px (xs)</p>
+      <div class="row">
+         <div class="col-sm-4" style="background-color:lavender;">Kolom 1: .col-sm-4</div>
+         <div class="col-sm-8" style="background-color:lavenderblush;">Kolom 2: .col-sm-8</div>
       </div>
+      <hr>
+
+      <h2>Skenario 4</h2>
+      <p>Sama dengan skenario 3, tetapi dengan tambahan kelas <span style="font-family: monospace">row-no-gutters</span></p>
+      <div class="row row-no-gutters">
+         <div class="col-sm-4" style="background-color:lavender;">Kolom 1: .col-sm-4</div>
+         <div class="col-sm-8" style="background-color:lavenderblush;">Kolom 2: .col-sm-8</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 5 (Nested Grid)</h2>
+      <p>Jala 2 kolom dengan ukuran yang berbeda dan didalam jala yang lebih besar terdapat jala 2 kolom dengan ukuran yang sama.</p>
+      <div class="row">
+         <div class="col-sm-8" style="background-color:lavender;">Kolom 1: .col-sm-8
+            <div class="row">
+               <div class="col-sm-6" style="background-color:lightcyan;">Kolom 1-A (Nested): .col-sm-6</div>
+               <div class="col-sm-6" style="background-color:lightgray;">Kolom 1-B (Nested): .col-sm-6</div>
+            </div>
+         </div>
+         <div class="col-sm-4" style="background-color:lavenderblush;">Kolom 2: .col-sm-4</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 6</h2>
+      <p>Jala 3 kolom dengan ukuran yang sama pada semua ukuran lebar peramban.</p>
+      <div class="row">
+         <div class="col-xs-4" style="background-color:burlywood;">Kolom 1: col-xs-4</div>
+         <div class="col-xs-4" style="background-color:pink;">Kolom 2: col-xs-4</div>
+         <div class="col-xs-4" style="background-color:turquoise;">Kolom 3: col-xs-4</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 7</h2>
+      <p>Jala 3 kolom dengan ukuran yang sama dan akan ditampilkan pada lebar peramban sm, md, lg. Sedangkan pada lebar peramban xs, Kolom 3 akan disembunyikan</p>
+      <div class="row">
+         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" style="background-color:burlywood;">
+            Kolom 1: col-xs-6 col-sm-4 col-md-4 col-lg-4
+         </div>
+         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" style="background-color:pink;">
+            Kolom 2: col-xs-6 col-sm-4 col-md-4 col-lg-4
+         </div>
+         <div class="hidden-xs col-sm-4 col-md-4 col-lg-4" style="background-color:turquoise;">
+            Kolom 3: hidden-xs col-sm-4 col-md-4 col-lg-4
+         </div>
+      </div>
+      <hr>
+
+      <h2>Skenario 8</h2>
+      <p>Jala yang ditampilkan berbeda-beda tergantung lebar peramban.</p>
+      <div class="row">
+         <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4" style="background-color:burlywood;">
+            Kolom 1: col-xs-12 col-sm-5 col-md-5 col-lg-4
+         </div>
+         <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4" style="background-color:pink;">
+            Kolom 2: col-xs-12 col-sm-5 col-md-5 col-lg-4
+         </div>
+         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-4" style="background-color:turquoise;">
+            Kolom 3: col-xs-12 col-sm-2 col-md-2 col-lg-4
+         </div>
+      </div>
+      <hr>
+
+      <h2>Skenario 9</h2>
+      <p>Jala yang akan menyesuaikan lebar peramban</p>
+      <div class="row">
+         <div class="col-xs-9 col-md-7" style="background-color:red;">Kolom 1-1: .col-xs-9 .col-md-7</div>
+         <div class="col-xs-3 col-md-5" style="background-color:lavender;">Kolom 1-2:.col-xs-3 .col-md-5</div>
+      </div>
+      <div class="row text-nowrap">
+         <div class="col-sm-6 col-md-10" style="background-color:lavenderblush;">Kolom 2-1: .col-sm-6 .col-md-10</div>
+         <div class="col-sm-6 col-md-2" style="background-color:lightgrey;">Kolom 2-2: .col-sm-6 .col-md-2</div>
+      </div>
+      <div class="row" style="background-color:lightcyan;">
+         <div class="col-xs-6">Kolom 3-1: .col-xs-6</div>
+         <div class="col-xs-6">Kolom 3-2: .col-xs-6</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 10</h2>
+      <p>Jala 4 kolom dengan kelas <span style="font-family: monospace;">.clearfix</span>. Gunakan pada titik tertentu akan mencegah pemotongan "yang aneh".</p>
+      <div class="row">
+         <div class="col-xs-6 col-sm-3" style="background-color:lavender;">
+            Kolom 1<br>
+            Skenario ini menggunakan kelas <span style="font-family: monospace;">.clearfix</span>.
+            Ubah lebar peramban untuk melihat efeknya.
+         </div>
+         <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">Kolom 2</div>
+         
+         <!-- Tambahkan/tampilkan "clearfix" pada lebar peramban tertentu -->
+         <div class="clearfix visible-xs"></div>
+         
+         <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">Kolom 3</div>
+         <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">Kolom 4</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 11</h2>
+      <p>Sama dengan Skenario 10 tetapi kelas <span style="font-family: monospace;">.clearfix</span> dihilangkan</p>
+      <div class="row">
+         <div class="col-xs-6 col-sm-3" style="background-color:lavender;">
+            Kolom 1<br>
+            Skenario ini TIDAK menggunakan kelas <span style="font-family: monospace;">.clearfix</span>.
+            Ubah lebar peramban untuk melihat efeknya.
+         </div>
+         <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">Kolom 2</div>
+         <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">Kolom 3</div>
+         <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">Kolom 4</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 12</h2>
+      <p>Menggeser kolom ke kanan menggunakan kelas <span style="font-family: monospace;">.col-&#60;lebarperamban&#62;-offset-&#60;besarkolom&#62;</span>.</p>
+      <div class="row text-nowrap" style="background-color:lavender;">
+         <div class="col-sm-5 col-md-6" style="background-color:lightgray;">Kolom 1: .col-sm-5 .col-md-6</div>
+         <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0" style="background-color:lightcyan;">Kolom 2: .col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+      </div>
+      <hr>
+
+      <h2>Skenario 13</h2>
+      <p>Mengubah urutan kolom dengan kelas <span style="font-family: monospace;">.col-&#60;lebarperamban&#62;-push-&#60;besarkolom&#62;</span> dan <span style="font-family: monospace;">.col-&#60;lebarperamban&#62;-pull-&#60;besarkolom&#62;</span>. Pada lebar peramban sm keatas, urutan tampil: Kolom A, Kolom B, Kolom C secara horizontal. Sebaliknya pada lebar peramban xs, akan tampil: Kolom B, Kolom A, Kolom C secara vertikal. </p>
+      <div class="row">
+         <div class="col-sm-5 col-sm-push-5" style="background-color:lavender;">
+            Kolom B
+         </div>
+         <div class="col-sm-5 col-sm-pull-5" style="background-color:lightgray;">
+            Kolom A
+         </div>
+         <div class="col-sm-2" style="background-color:lightcyan;">
+            Kolom C
+         </div>
+      </div>
+      <hr>
    </div>
 
 </body>
 
 </html>
+
