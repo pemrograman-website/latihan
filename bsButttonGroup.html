@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Pengelompokkan Tombol Pada Bootstrap</title>
+   <meta charset="UTF-8">
+
+   <!-- Meta ini memastikan agar website responsif -->
+   <meta name="viewport" content="width=device-width, initialscale=1">
+   
+   <!-- Link eksternal untuk memuat framework Bootstrap -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+   <div class="container">
+      <!-- Kelompok Tombol dengan berbagai ukuran-->
+      <h2>Kelompok Tombol - Ukuran</h2>
+      <p>Tambahkan kelas .btn-group-* untuk menentukan semua ukuran tombol di dalam kelompok tombol.</p>
+      <h3>Tombol berukuran besar (lg):</h3>
+      <div class="btn-group btn-group-lg">
+         <button type="button" class="btn btn-primary">Apple</button>
+         <button type="button" class="btn btn-primary">Samsung</button>
+         <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+      <h3>Tombol berukuran standar:</h3>
+      <div class="btn-group">
+         <button type="button" class="btn btn-primary">Apple</button>
+         <button type="button" class="btn btn-primary">Samsung</button>
+         <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+      <h3>Tombol berukuran kecil (sm):</h3>
+      <div class="btn-group btn-group-sm">
+         <button type="button" class="btn btn-primary">Apple</button>
+         <button type="button" class="btn btn-primary">Samsung</button>
+         <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+      <h3>Tombol berukuran sangat kecil (xs):</h3>
+      <div class="btn-group btn-group-xs">
+         <button type="button" class="btn btn-primary">Apple</button>
+         <button type="button" class="btn btn-primary">Samsung</button>
+         <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+      <hr>
+      
+      <!-- Kelompok Tombol ditampilkan vertikal -->
+      <h2>Kelompok tombol vertikal</h2>
+      <p>Gunakan kelas .btn-group-vertical untuk menampilkan Kelompok Tombol secara vertikal:</p>
+      <div class="btn-group-vertical">
+         <button type="button" class="btn btn-primary">Apple</button>
+         <button type="button" class="btn btn-primary">Samsung</button>
+         <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+      <hr>
+
+      <!-- Kelompok Tombol ditampilkan full lebar halaman -->
+      <h2>Kelompok Tombol Selebar Halaman</h2>
+      <p>Untuk membuat kelompok tombol memenuhi lebar halaman, gunakan kelas .btn-group-justified:</p>
+      <div class="btn-group btn-group-justified">
+         <a href="#" class="btn btn-primary">Apple</a>
+         <a href="#" class="btn btn-primary">Samsung</a>
+         <a href="#" class="btn btn-primary">Sony</a>
+      </div>
+      <h2>Justified Button Groups</h2>
+      <p>Perbedaan dengan di atas, yang ini memakai elemen &lt;button&gt; (silahkan lihat kode-nya):</p>
+      <div class="btn-group btn-group-justified">
+         <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+         </div>
+         <div class="btn-group">
+            <button type="button" class="btn btn-primary">Samsung</button>
+         </div>
+         <div class="btn-group">
+            <button type="button" class="btn btn-primary">Sony</button>
+         </div>
+      </div>
+      <hr>
+      
+      <!-- Kelompok Tombol Bersarang-->
+      <h2>Kelompok Tombol Bersarang (Nested)</h2>
+      <p>Kelompok tombol bersarang untuk membuat menu drop-down:</p>
+      <div class="btn-group">
+         <button type="button" class="btn btn-primary">Apple</button>
+         <button type="button" class="btn btn-primary">Samsung</button>
+         <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+               Sony <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+               <li><a href="#">Tablet</a></li>
+               <li><a href="#">Smartphone</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <h2>Split Buttons</h2>
+      <p>Jika tombol menu drop-down terpisah dari tombol utama:</p>
+      <div class="btn-group">
+         <button type="button" class="btn btn-primary">Sony</button>
+         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Tablet</a></li>
+            <li><a href="#">Smartphone</a></li>
+         </ul>
+      </div>
+   
+   </div>
+    
+</body>
+
+</html>
+

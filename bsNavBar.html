@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <title>Welcome to the Online Megastore</title>
+   <title>Palang Navigasi pada Bootstrap</title>
    <meta charset="UTF-8">
 
    <!-- Meta ini memastikan agar website responsif -->
@@ -17,8 +17,13 @@
 
 <body>
    
-   <!-- Navigational bar -->
-   <nav class="navbar navbar-inverse">
+   <!--
+      Navigational bar 
+      tambahkan kelas .navbar-fixed-top (untuk menetapkan navbar di bagian atas)
+                      .navbar-fixed-bottom (untuk menetapkan navbar di bagian bawah)
+                      .navbar-inverse (untuk mengubah warna menjadi gelap)
+   -->
+   <nav class="navbar">
       <div class="container-fluid">
 
          <!-- Navigational bar header -->
@@ -28,27 +33,27 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>                        
             </button>
-         <a class="navbar-brand" href="#">WebSiteName</a>
+         <a class="navbar-brand" href="#">NamaWebsite</a>
          </div>
          
          <!-- Navigational bar menu -->
          <div class="collapse navbar-collapse" id="myNavbar">
             <!-- Menu mepet kiri -->
             <ul class="nav navbar-nav">
-               <li class="active"><a href="#">Home</a></li>
+               <li class="active"><a href="#">Beranda</a></li>
                
                <!-- Dropdown menu -->
                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tautan 1 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                     <li><a href="#">Page 1-1</a></li>
-                     <li><a href="#">Page 1-2</a></li>
-                     <li><a href="#">Page 1-3</a></li>
+                     <li><a href="#">Tautan 1-1</a></li>
+                     <li><a href="#">Tautan 1-2</a></li>
+                     <li><a href="#">Tautan 1-3</a></li>
                   </ul>
                </li>
                
-               <li><a href="#">Page 2</a></li>
-               <li><a href="#">Page 3</a></li>
+               <li><a href="#">Tautan 2</a></li>
+               <li><a href="#">Tautan 3</a></li>
             </ul>
 
             <!-- Menu mepet kanan -->
@@ -56,6 +61,9 @@
                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Daftar</a></li>
                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
+            
+            <!-- .navbar-text untuk menampilkan teks non-link -->
+            <p class="navbar-text visible-lg">Informasi berupa teks. Bukan link.</p>
 
             <!-- Navbar Form posisi di kanan -->
             <!-- Navabar Form ini hanya akan ditampilkan pada layar lg dan md -->
@@ -63,6 +71,7 @@
                <div class="input-group">
                   <input type="text" class="form-control" placeholder="Search" name="search">
                   <div class="input-group-btn">
+                     <!-- Button dengan glyphicon -->
                      <button class="btn btn-default" type="submit">
                         <i class="glyphicon glyphicon-search"></i>
                      </button>
