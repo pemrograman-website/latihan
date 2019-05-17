@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <title>Bootstrap Example</title>
+   <title>Dropdown</title>
    <meta charset="utf-8">
    
    <!-- Meta ini memastikan agar website responsif -->
@@ -18,10 +18,12 @@
 <body>
    <div class="container">
 
-      <h2>Dropdowns</h2>
+      <h2>Dropdown</h2>
       <p>Kelas <span style="font-family: monospace;">.dropdown</span> digunakan untuk menampilkan menu dropdown.</p>
       <p>Gunakan kelas <span style="font-family: monospace;">.dropdown-menu</span> untuk mendefinisikan isi menu dropdown.</p>
-      <p>Untuk membuka menu dropdown, gunakan button atau link dengan kelas <span style="font-family: monospace;">.dropdown-toggle</span> dan atribut <span style="font-family: monospace;">data-toggle="dropdown"</span>.</p>                                          
+      <p>Untuk membuka menu dropdown, gunakan button atau link dengan kelas <span style="font-family: monospace;">.dropdown-toggle</span> dan atribut <span style="font-family: monospace;">data-toggle="dropdown"</span>.</p>
+      
+      <!-- Gunakan kelas .dropdown untuk membuat menu dropdown -->
       <div class="dropdown">
          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tutorial
             <span class="caret"></span>
@@ -30,23 +32,53 @@
          <!-- Isi dropdown dideskripsikan di sini -->
          <ul class="dropdown-menu">
             
-            <!-- Kelas .dropdown-header menambahkan header pada isi dropdown -->
+            <!--
+               Kelas .dropdown-header menambahkan header pada isi dropdown
+               Kelas .active menambahkan warna background biru (menunjukkan kalau sedang aktif)
+               Kelas .disabled mematikan tautan sehingga tidak bisa dipilih
+               Kelas .divider menampilakan garis pembagi
+            -->
             <li class="dropdown-header">Dasar-Dasar</li>
-            <li><a href="#">HTML</a></li>
+            <li class="active"><a href="#">HTML</a></li>
             <li><a href="#">CSS</a></li>
             <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP</a></li>
-
-            <!-- Kelas .divider menampilkan garis pembagi -->
+            <li class="disabled"><a href="#">PHP</a></li>
             <li><a href="#">Bootstrap</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Framework</li>
             <li><a href="#">Yii</a></li>
             <li><a href="#">Laravel</a></li>
             <li><a href="#">CodeIgniter</a></li>
+            <li><a href="#">Zymfony</a></li>
          </ul>
       </div>
+      <hr>
 
+      <h2>Dropup</h2>
+      <p>Kelas <span style="font-family: monospace;">.dropup</span> digunakan untuk menampilkan menu dropdown ke arah atas bukan ke bawah.</p>
+
+      <!-- Gunakan kelas .dropup untuk membuat menu dropup -->
+      <div class="dropup">
+         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tutorial
+            <span class="caret"></span>
+         </button>
+
+         <!-- Isi dropdown dideskripsikan di sini -->
+         <ul class="dropdown-menu">
+            <li class="dropdown-header">Dasar-Dasar</li>
+            <li class="active"><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="disabled"><a href="#">PHP</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Framework</li>
+            <li><a href="#">Yii</a></li>
+            <li><a href="#">Laravel</a></li>
+            <li><a href="#">CodeIgniter</a></li>
+            <li><a href="#">Zymfony</a></li>
+         </ul>
+      </div>
    </div>
 </body>
 
