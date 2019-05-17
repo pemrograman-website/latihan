@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Bootstrap Example</title>
+   <meta charset="utf-8">
+   
+   <!-- Meta ini memastikan agar website responsif -->
+   <meta name="viewport" content="width=device-width, initialscale=1">
+   
+   <!-- Link eksternal untuk memuat framework Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+   <div class="container">
+
+      <h2>Dropdowns</h2>
+      <p>Kelas <span style="font-family: monospace;">.dropdown</span> digunakan untuk menampilkan menu dropdown.</p>
+      <p>Gunakan kelas <span style="font-family: monospace;">.dropdown-menu</span> untuk mendefinisikan isi menu dropdown.</p>
+      <p>Untuk membuka menu dropdown, gunakan button atau link dengan kelas <span style="font-family: monospace;">.dropdown-toggle</span> dan atribut <span style="font-family: monospace;">data-toggle="dropdown"</span>.</p>                                          
+      <div class="dropdown">
+         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tutorial
+            <span class="caret"></span>
+         </button>
+
+         <!-- Isi dropdown dideskripsikan di sini -->
+         <ul class="dropdown-menu">
+            
+            <!-- Kelas .dropdown-header menambahkan header pada isi dropdown -->
+            <li class="dropdown-header">Dasar-Dasar</li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+
+            <!-- Kelas .divider menampilkan garis pembagi -->
+            <li><a href="#">Bootstrap</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Framework</li>
+            <li><a href="#">Yii</a></li>
+            <li><a href="#">Laravel</a></li>
+            <li><a href="#">CodeIgniter</a></li>
+         </ul>
+      </div>
+
+   </div>
+</body>
+
+</html>
