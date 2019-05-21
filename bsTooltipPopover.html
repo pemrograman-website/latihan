@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Tooltip dan Popover</title>
+   <meta charset="utf-8">
+   
+   <!-- Meta ini memastikan agar website responsif -->
+   <meta name="viewport" content="width=device-width, initialscale=1">
+   
+   <!-- Link eksternal untuk memuat framework Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+   <!-- Script ini wajib dimasukkan untuk menggunakan tooltip dan popover di bootstrap -->
+   <script>
+      $(document).ready(function(){
+         $('[data-toggle="tooltip"]').tooltip();   
+      });
+
+      $(document).ready(function(){
+         $('[data-toggle="popover"]').popover();   
+      });
+   </script>
+</head>
+
+<body class="container">
+   
+   <div class="jumbotron">
+      <h3>Contoh Tooltip</h3>
+      <p>Atribut <span style="font-family: monospace; font-weight: bold">data-placement</span> menentukan posisi tooltip ditampilkan.</p>
+   </div>
+
+   <ul class="list-inline">
+      <li>
+         <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" data-original-title="Kamu nunjuk saya ya???">
+            Tunjuk saya
+         </button>
+      </li>
+      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Tooltip di atas">Top</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip di bawah">Bottom</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip di kiri!">Left</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip di kanan!">Right</a></li>
+   </ul>
+   <hr>
+   <br><br>
+
+   <div class="jumbotron">
+      <h3>Contoh Popover</h3>
+      <p>Atribut <span style="font-family: monospace; font-weight: bold">title</span> berisi judul.<br>
+         Atribut <span style="font-family: monospace; font-weight: bold">data-content</span> berisi isi.</p>
+   </div>
+   <ul class="list-inline">
+      <li>
+         <button type="button" class="btn btn-info" data-toggle="popover" data-placement="bottom" data-original-title="Judul Popover" data-content="Ini isi popovernya....">
+            Klik dong!
+         </button>
+      </li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-placement="top" data-content="Tampil di atas">Top</a></li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-placement="bottom" data-content="Tampil di bawah">Bottom</a></li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-placement="left" data-content="Tampil di kiri">Left</a></li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-placement="right" data-content="Tampil di kanan">Right</a></li>
+      <li>
+         <button type="button" class="btn btn-info" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-original-title="Judul Popover" data-content="Ini isi popovernya....">
+            Hover!
+         </button>
+      </li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Tampil di atas">Focus Top</a></li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Tampil di bawah">Hover Bottom</a></li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Tampil di kiri">Focus Left</a></li>
+      <li><a href="#" title="Judul" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Tampil di kanan">Hover Right</a></li>
+   </ul>
+   <br><br><br><br><br>
+</body>
+
+</html>
+

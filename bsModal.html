@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Modal</title>
+   <meta charset="utf-8">
+   
+   <!-- Meta ini memastikan agar website responsif -->
+   <meta name="viewport" content="width=device-width, initialscale=1">
+   
+   <!-- Link eksternal untuk memuat framework Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+   
+   <h2>Modal Berukuran Standar</h2>
+   <!-- Trigger the modal with a button -->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#defaultModal">
+      Buka Modal Standar
+   </button>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="defaultModal" role="dialog">
+      <div class="modal-dialog">
+      
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Judul Modal</h4>
+            </div>
+            <div class="modal-body">
+               <p>Isi dari modal berukuran standar.</p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+            </div>
+         </div>
+      </div>
+   </div>
+      
+   <h2>Modal Berukuran Kecil</h2>
+   <!-- Trigger the modal with a button -->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#smallModal">
+      Buka Modal Kecil
+   </button>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="smallModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Judul Modal</h4>
+            </div>
+            <div class="modal-body">
+               <p>Isi dari modal berukuran kecil.</p>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <h2>Modal Berukuran Besar</h2>
+   <!-- Trigger the modal with a button -->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#largeModal">
+      Buka Modal Besar
+   </button>
+
+   <!-- Modal -->
+   <div class="modal fade" id="largeModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Judul Modal</h4>
+         </div>
+         <div class="modal-body">
+            <p>Isi dari modal berukuran besar.</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+         </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
+
